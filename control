@@ -1,15 +1,20 @@
 Source: filebench
-Section: unknown
+Section: utils
 Priority: extra
-Maintainer: Martin Steigerwald <ms@teamix.de>
+Maintainer: Martin Steigerwald <ms@teamix.de>,
+ Alexandre Mestiashvili <alex@biotec.tu-dresden.de>
 Build-Depends: debhelper (>= 8.0.0), autotools-dev
 Standards-Version: 3.9.2
 Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/filebench.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/filebench.git;a=summary
+Vcs-Git: git://git.debian.org/collab-maint/filebench.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/filebench.git;a=summary
 
 Package: filebench
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: is a file system and storage benchmark 
+ that allows to generate a high variety of workloads.
+ It employs extensive Workload Model Language (WML) 
+ for detailed workload specification.
+ Includes popular pre-defined workloads: webserver, fileserver, varmail, etc.
+ Reports throughput and latency histograms
