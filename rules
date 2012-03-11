@@ -1,5 +1,16 @@
 #!/usr/bin/make -f
 #export DH_VERBOSE=1
 
+pkg=$(shell dpkg-parsechangelog | sed -n 's/^Source: //p')
+
 %:
-	dh $@ 
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/$(pkg)/usr/share/man/man1/
+	help2man -h -h --name="is a file system and storage benchmark that \
+	allows to generate a high variety of workloads" --no-info --no-discard-stderr \
+	$(CURDIR)/$(pkg) > $(CURDIR)/debian/$(pkg)/usr/share/man/man1/$(pkg).1
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS

@@ -1,11 +1,11 @@
 Source: filebench
 Section: utils
 Priority: extra
-Maintainer: Martin Steigerwald <ms@teamix.de>,
- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev
+Maintainer: Martin Steigerwald <ms@teamix.de>
+Uploaders: Alexandre Mestiashvili <alex@biotec.tu-dresden.de>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, help2man
 Standards-Version: 3.9.2
-Homepage: <insert the upstream URL, if relevant>
+Homepage: http://sourceforge.net/projects/filebench/
 Vcs-Git: git://git.debian.org/collab-maint/filebench.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/filebench.git;a=summary
 
