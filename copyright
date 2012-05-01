@@ -6,7 +6,7 @@ Files: *
 Copyright: 2005 Sun Microsystems, Inc.
  2011 File system and Storage Lab, SBU.
  Vasily Tarasov <vass@fsl.cs.sunysb.edu>
-License: CDDL
+License: CDDL-1.0
 
 Files: debian/*
 Copyright: 2012 Martin Steigerwald <ms@teamix.de>
@@ -28,9 +28,8 @@ License: GPL-2+
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
 
-License: CDDL 
-	COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL)
-  Version 1.0
+License: CDDL-1.0
+  COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 (CDDL-1.0)
   .
   1. Definitions.
   .
