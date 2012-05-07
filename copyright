@@ -16,7 +16,7 @@ Copyright: 2009 Sun Microsystems, Inc.
 License: CDDL-1.0
 
 Files: parser_gram.c parser_gram.h
-Copyright: 1984, 1989, 1990, 2000-2006 Free Software Foundation, Inc.
+Copyright: 1984, 1989, 1990, 2000-2011 Free Software Foundation, Inc.
   C LALR(1) parser skeleton written by Richard Stallman, by
   simplifying the original so-called "semantic" parser.
 License: GPL-3+ with exception
