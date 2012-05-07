@@ -3,6 +3,8 @@ filebench (1.4.9.1-1) unstable; urgency=low
   * Initial release (Closes: #655222).
   [ Martin Steigerwald ]
   * Initial packaging.
+  * debian/control: Bumped standards version to 3.9.3.
+    No changes needed.
   [ Alex Mestiashvili ]
   * debian/copyright: Added copyright information.
   * debian/filebench.1: Added manpage.
