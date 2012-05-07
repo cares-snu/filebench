@@ -1,5 +1,10 @@
 filebench (1.4.9.1-1) unstable; urgency=low
 
-  * Initial release (Closes: #655222)
+  * Initial release (Closes: #655222).
+  [ Martin Steigerwald ]
+  * Initial packaging.
+  [ Alex Mestiashvili ]
+  * debian/copyright: Added copyright information.
+  * debian/filebench.1: Added manpage.
 
- -- Martin Steigerwald <ms@teamix.de>  Mon, 09 Jan 2012 15:59:08 +0100
+ -- Martin Steigerwald <ms@teamix.de>  Mon, 07 May 2012 10:59:08 +0100
