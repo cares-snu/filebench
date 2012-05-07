@@ -12,9 +12,9 @@ Vcs-Browser: http://git.debian.org/?p=collab-maint/filebench.git;a=summary
 Package: filebench
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: is a file system and storage benchmark 
- that allows to generate a high variety of workloads.
- It employs extensive Workload Model Language (WML) 
- for detailed workload specification.
- Includes popular pre-defined workloads: webserver, fileserver, varmail, etc.
- Reports throughput and latency histograms
+Description: File system and storage benchmark for a variety of workloads
+ Filebench is a filesystem and storage backup that can generate a high
+ variety of workloads. It employs extensive Workload Model Language (WML)
+ for detailed workload specification. It includes popular pre-defined
+ workloads like: webserver, fileserver, varmail. It reports throughput
+ and latency histograms.
