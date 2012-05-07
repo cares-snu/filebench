@@ -8,10 +8,46 @@ Copyright: 2005-2009 Sun Microsystems, Inc.
  Vasily Tarasov <vass@fsl.cs.sunysb.edu>
 License: CDDL-1.0
 
-Files: filebench.h
+Files: eventgen.c, fb_localfs.c, filebench.h, fileset.c, flowop_library.c
+ parser_gram.y, parser_lex.c, parser_lex.l, procflow.c, threadflow.c,
+ utils.c, vars.c
 Copyright: 2009 Sun Microsystems, Inc.
  Portions Copyright 2008 by Denis Cheng.
 License: CDDL-1.0
+
+Files: parser_gram.c, parser_gram.h
+Copyright: 1984, 1989, 1990, 2000-2006 Free Software Foundation, Inc.
+  C LALR(1) parser skeleton written by Richard Stallman, by
+  simplifying the original so-called "semantic" parser.
+License: GPL-3+ with exception
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-3".
+ .
+ As a special exception, you may create a larger work that contains
+ part or all of the Bison parser skeleton and distribute that work
+ under terms of your choice, so long as that work isn't itself a
+ parser generator using the skeleton or a modified version thereof
+ as a parser skeleton.  Alternatively, if you modify or redistribute
+ the parser skeleton itself, you may (at your option) remove this
+ special exception, which will cause the skeleton and the resulting
+ Bison output files to be licensed under the GNU General Public
+ License without this special exception.
+ .
+ This special exception was added by the Free Software Foundation in
+ version 2.2 of Bison.
 
 Files: debian/*
 Copyright: 2012 Martin Steigerwald <ms@teamix.de>
