@@ -8,9 +8,9 @@ Copyright: 2005-2009 Sun Microsystems, Inc.
  Vasily Tarasov <vass@fsl.cs.sunysb.edu>
 License: CDDL-1.0
 
-Files: eventgen.c, fb_localfs.c, filebench.h, fileset.c, flowop_library.c
- parser_gram.y, parser_lex.c, parser_lex.l, procflow.c, threadflow.c,
- utils.c, vars.c
+Files: eventgen.c fb_localfs.c filebench.h fileset.c flowop_library.c
+ parser_gram.y parser_lex.c parser_lex.l procflow.c threadflow.c
+ utils.c vars.c
 Copyright: 2009 Sun Microsystems, Inc.
  Portions Copyright 2008 by Denis Cheng.
 License: CDDL-1.0
