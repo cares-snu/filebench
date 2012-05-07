@@ -11,6 +11,7 @@ License: CDDL-1.0
 Files: filebench.h
 Copyright: 2009 Sun Microsystems, Inc.
  Portions Copyright 2008 by Denis Cheng.
+License: CDDL-1.0
 
 Files: debian/*
 Copyright: 2012 Martin Steigerwald <ms@teamix.de>
