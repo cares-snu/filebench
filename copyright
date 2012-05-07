@@ -3,13 +3,18 @@ Upstream-Name: filebench
 Source: http://sourceforge.net/projects/filebench/
 
 Files: *
-Copyright: 2005 Sun Microsystems, Inc.
+Copyright: 2005-2009 Sun Microsystems, Inc.
  2011 File system and Storage Lab, SBU.
  Vasily Tarasov <vass@fsl.cs.sunysb.edu>
 License: CDDL-1.0
 
+Files: filebench.h
+Copyright: 2009 Sun Microsystems, Inc.
+ Portions Copyright 2008 by Denis Cheng.
+
 Files: debian/*
 Copyright: 2012 Martin Steigerwald <ms@teamix.de>
+ 2012 Alex Mestiashvili <alex@biotec.tu-dresden.de>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
