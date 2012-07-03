@@ -177,7 +177,7 @@ multi-process workloads.
 Second warning informs that Filebench was not able to increase shared memory region size. You can either:
  \-Run Filebench as root
  \-Increase shared memory region size to 256MB 
-(sudo echo 268435456 > /proc/sys/kernel/randomize_va_space) and ignore this warning
+(sudo echo 268435456 > /proc/sys/kernel/shmmax) and ignore this warning
 .SS "Running interactively:"
 .IX Subsection "Running interactively:"
 One can start Filebench by simply executing filebench command than load and 
