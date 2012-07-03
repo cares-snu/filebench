@@ -171,13 +171,13 @@ Filebench is shipped with a library of these personalities, ready to use.
 A lot of Linux distributions enable address space randomization. 
 This prevents Filebench from mapping a shared memory region to the same 
 address in different processes. Disable address space randomization 
-(sudo echo 0 > /proc/sys/kernel/randomize_va_space) for stable operation of 
+(echo 0 > /proc/sys/kernel/randomize_va_space) for stable operation of 
 multi-process workloads.
 .PP
 Second warning informs that Filebench was not able to increase shared memory region size. You can either:
  \-Run Filebench as root
  \-Increase shared memory region size to 256MB 
-(sudo echo 268435456 > /proc/sys/kernel/shmmax) and ignore this warning
+(echo 268435456 > /proc/sys/kernel/shmmax) and ignore this warning
 .SS "Running interactively:"
 .IX Subsection "Running interactively:"
 One can start Filebench by simply executing filebench command than load and 
