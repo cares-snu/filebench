@@ -171,7 +171,7 @@ Filebench is shipped with a library of these personalities, ready to use.
 A lot of Linux distributions enable address space randomization. 
 This prevents Filebench from mapping a shared memory region to the same 
 address in different processes. Disable address space randomization 
-(echo 0 > /proc/sys/kernel/randomize_va_space) for stable operation of 
+(sudo echo 0 > /proc/sys/kernel/randomize_va_space) for stable operation of 
 multi-process workloads.
 .PP
 Second warning informs that Filebench was not able to increase shared memory region size. You can either:
