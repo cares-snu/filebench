@@ -2,8 +2,12 @@ filebench (1.4.9.1-2) UNRELEASED; urgency=low
 
   * debian/control: Use canonical VCS URLs, fixes lintian tag
     vcs-field-not-canonical.
+  * debian/compat: Use debhelper version 9 to enable hardening flags
+    automatically. Fixes lintian tags hardening-no-relro and
+    hardening-no-fortify-functions.
+  * Updated Standards-Version to 3.9.4.
 
- -- Martin Steigerwald <ms@teamix.de>  Tue, 08 Oct 2013 11:35:36 +0200
+ -- Martin Steigerwald <ms@teamix.de>  Tue, 08 Oct 2013 11:47:36 +0200
 
 filebench (1.4.9.1-1) unstable; urgency=low
 
