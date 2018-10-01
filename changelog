@@ -3,6 +3,7 @@ filebench (1.4.9.1-3) UNRELEASED; urgency=medium
   * d/copyright: Use https protocol in Format field
   * d/control: Deprecating priority extra as per policy 4.0.1
   * d/control: Set Vcs-* to salsa.debian.org
+  * d/watch: Use https protocol
 
  -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 10:13:29 +0200
 
