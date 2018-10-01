@@ -1,6 +1,6 @@
 Source: filebench
 Section: utils
-Priority: extra
+Priority: optional
 Maintainer: Martin Steigerwald <ms@teamix.de>
 Uploaders: Alexandre Mestiashvili <alex@biotec.tu-dresden.de>
 Build-Depends: debhelper (>= 9), autotools-dev, help2man, bison
