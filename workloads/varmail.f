@@ -23,19 +23,13 @@
 # Use is subject to license terms.
 #
 
-set $dir=/home/mj/rps_ftls/baseline/vSSD
-#set $dir=/home/yoona/cube--/vSSD
-#set $dir=/home/yoona/cube/vSSD
-
+set $dir=/vSSD
 set $nfiles=650000
 set $meandirwidth=1000000
 set $filesize=cvar(type=cvar-gamma,parameters=mean:16384;gamma:1.5)
 set $nthreads=16
 set $iosize=1m
 set $meanappendsize=16k
-
-#set $iosize=cvar(type=cvar-gamma,parameters=mean:4194304;gamma:1.5,min=4096,round=4096)
-#set $meanappendsize=cvar(type=cvar-gamma,parameters=mean:4194304;gamma:1.5,min=4096,round=4096)
 
 define fileset name=bigfileset,path=$dir,size=$filesize,entries=$nfiles,dirwidth=$meandirwidth,prealloc,reuse
 

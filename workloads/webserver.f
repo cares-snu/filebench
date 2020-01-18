@@ -23,10 +23,7 @@
 # Use is subject to license terms.
 #
 
-set $dir=/home/yoona/baseline/vSSD
-#set $dir=/home/yoona/cube--/vSSD
-#set $dir=/home/yoona/cube/vSSD
-
+set $dir=/vSSD
 set $nfiles=800
 set $meandirwidth=20
 set $filesize=cvar(type=cvar-gamma,parameters=mean:16384;gamma:1.5)
@@ -78,4 +75,3 @@ define process name=filereader,instances=1
 echo  "Web-server Version 3.1 personality successfully loaded"
 
 run 250
-

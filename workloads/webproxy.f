@@ -23,10 +23,7 @@
 # Use is subject to license terms.
 #
 
-set $dir=/home/yoona/baseline/vSSD
-#set $dir=/home/yoona/cube--/vSSD
-#set $dir=/home/yoona/cube/vSSD
-
+set $dir=/vSSD
 set $nfiles=700000
 set $meandirwidth=1000000
 set $meanfilesize=16k

@@ -23,9 +23,9 @@
 # Use is subject to license terms.
 #
 
-set $dir=/home/mj/rps_ftls/baseline/vSSD
-
+set $dir=/vSSD
 set $eventrate=0
+set $runtime=30
 set $iosize=2k
 set $nshadows=20
 set $ndbwriters=10
@@ -84,4 +84,3 @@ define process name=shadow,instances=$nshadows
 echo "OLTP Version 3.0  personality successfully loaded"
 
 run 600
-
