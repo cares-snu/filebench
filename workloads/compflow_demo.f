@@ -22,7 +22,7 @@
 # Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 
-set $dir=/tmp
+set $dir=/vSSD
 set $nfiles=700
 set $meandirwidth=20
 set $filesize=128k

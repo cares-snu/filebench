@@ -28,7 +28,7 @@
 # using $nthreads number of threads, doing "stat" calls on each file.
 #
 
-set $dir=/tmp
+set $dir=/vSSD
 set $nfiles=10000
 set $meandirwidth=20
 set $filesize=128k

@@ -23,7 +23,7 @@
 # Use is subject to license terms.
 #
 
-set $dir=/tmp
+set $dir=/vSSD
 set $nfiles=50000
 set $meandirwidth=100
 set $meanfilesize=16k

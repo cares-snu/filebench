@@ -23,7 +23,7 @@
 # Use is subject to license terms.
 #
 
-set $dir=/tmp
+set $dir=/vSSD
 set $filesize=5g
 set $nthreads=1
 set $iosize=1m

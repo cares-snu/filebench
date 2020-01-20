@@ -26,7 +26,7 @@
 # of [1B - 8KB]) to a 1GB file.
 # Stops after 128K ($count) writes have been done.
 
-set $dir=/tmp
+set $dir=/vSSD
 set $cached=false
 set $count=128k
 set $iosize=8k

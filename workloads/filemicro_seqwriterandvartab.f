@@ -27,7 +27,7 @@
 
 
 
-set $dir=/tmp
+set $dir=/vSSD
 set $nthreads=1
 set $cached=false
 set $sync=false

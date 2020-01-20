@@ -24,7 +24,7 @@
 # Exercises the indexed attribute of the fileset_pick() function.
 #
 
-set $dir=/tmp
+set $dir=/vSSD
 set $cached=false
 set $meandirwidth=20
 set $nthreads=5

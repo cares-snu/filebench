@@ -24,7 +24,7 @@
 #
 # ident	"%Z%%M%	%I%	%E% SMI"
 
-set $dir=/tmp
+set $dir=/vSSD
 set $nfiles=1000
 set $dirwidth=20
 set $filesize=16k

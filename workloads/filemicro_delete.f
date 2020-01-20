@@ -29,7 +29,7 @@
 # Fire off 16 threads ($nthreads), where each thread stops after
 # deleting 1000 ($count) files.
 
-set $dir=/tmp
+set $dir=/vSSD
 set $count=1000
 set $filesize=16k
 set $nfiles=5000

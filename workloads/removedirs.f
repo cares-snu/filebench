@@ -24,7 +24,7 @@
 #
 # Creates a fileset with $ndirs empty leaf directories then rmdir's all of them
 #
-set $dir=/tmp
+set $dir=/vSSD
 set $ndirs=10000
 set $meandirwidth=100
 set $nthreads=16

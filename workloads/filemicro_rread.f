@@ -27,7 +27,7 @@
 # Single threaded random reads (2KB I/Os) on a 1GB file.
 # Stops after 128MB ($bytes) has been read.
 
-set $dir=/tmp
+set $dir=/vSSD
 set $bytes=128m
 set $cached=false
 set $filesize=1g

@@ -29,7 +29,7 @@
 # $nshadows - number of shadow processes
 # $ndbwriters - number of database writers
 
-set $dir=/tmp
+set $dir=/vSSD
 set $eventrate=0
 set $iosize=2k
 set $nshadows=200
