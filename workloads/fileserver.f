@@ -23,14 +23,16 @@
 # Use is subject to license terms.
 #
 
-set $dir=/vSSD
-set $nfiles=10000
+set $dir=/home/mj/rps_ftls/baseline/vSSD
+
+
+set $nfiles=100000
 set $meandirwidth=20
 set $filesize=cvar(type=cvar-gamma,parameters=mean:131072;gamma:1.5)
 set $nthreads=50
 set $iosize=1m
 set $meanappendsize=16k
-set $runtime=60
+set $runtime=600
 
 define fileset name=bigfileset,path=$dir,size=$filesize,entries=$nfiles,dirwidth=$meandirwidth,prealloc=80
 

@@ -23,11 +23,14 @@
 # Use is subject to license terms.
 #
 
-set $dir=/vSSD
-set $nfiles=10000
+set $dir=/home/yoona/baseline/vSSD
+#set $dir=/home/yoona/cube--/vSSD
+#set $dir=/home/yoona/cube/vSSD
+
+set $nfiles=700000
 set $meandirwidth=1000000
 set $meanfilesize=16k
-set $nthreads=100
+set $nthreads=5
 set $meaniosize=16k
 set $iosize=1m
 
@@ -61,3 +64,5 @@ define process name=proxycache,instances=1
 }
 
 echo  "Web proxy-server Version 3.0 personality successfully loaded"
+
+run 600
