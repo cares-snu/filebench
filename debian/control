@@ -1,13 +1,13 @@
 Source: filebench
 Section: utils
 Priority: optional
-Maintainer: Martin Steigerwald <ms@teamix.de>
-Uploaders: Alexandre Mestiashvili <alex@biotec.tu-dresden.de>
-Build-Depends: debhelper (>= 9), autotools-dev, help2man, bison
+Maintainer: Hyeon Kim <simnalamburt@gmail.com>
+Uploaders: Martin Steigerwald <ms@teamix.de>, Alexandre Mestiashvili <alex@biotec.tu-dresden.de>
+Build-Depends: debhelper (>= 9), autotools-dev, bison
 Standards-Version: 3.9.4
-Homepage: http://sourceforge.net/projects/filebench/
-Vcs-Git: https://salsa.debian.org/debian/filebench.git
-Vcs-Browser: https://salsa.debian.org/debian/filebench
+Homepage: https://github.com/cares-snu/filebench
+Vcs-Git: https://github.com/cares-snu/filebench.git
+Vcs-Browser: https://github.com/cares-snu/filebench
 
 Package: filebench
 Architecture: any

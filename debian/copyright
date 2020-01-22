@@ -1,11 +1,12 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: filebench
-Source: http://sourceforge.net/projects/filebench/
+Source: https://github.com/cares-snu/filebench
 
 Files: *
 Copyright: 2005-2009 Sun Microsystems, Inc.
  2011 File system and Storage Lab, SBU.
  Vasily Tarasov <vass@fsl.cs.sunysb.edu>
+ 2020 Computer ARchitecture & Embedded Systems Laboratory, Seoul National University <cares@davinci.snu.ac.kr>
 License: CDDL-1.0
 
 Files: eventgen.c fb_localfs.c filebench.h fileset.c flowop_library.c
@@ -52,6 +53,7 @@ License: GPL-3+ with exception
 Files: debian/*
 Copyright: 2012 Martin Steigerwald <ms@teamix.de>
  2012 Alex Mestiashvili <alex@biotec.tu-dresden.de>
+ 2020 Computer ARchitecture & Embedded Systems Laboratory, Seoul National University <cares@davinci.snu.ac.kr>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
