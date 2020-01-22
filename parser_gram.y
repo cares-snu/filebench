@@ -1297,7 +1297,7 @@ var_int_val: FSV_VAL_POSINT
 "  Filebench is a file system and storage benchmark that interprets a script\n" \
 "  written in its Workload Model Language (WML), and procees to generate the\n" \
 "  specified workload. Refer to the README for more details.\n\n" \
-"  Visit github.com/filebench/filebench for WML definition and tutorials.\n\n" \
+"  Visit https://github.com/filebench/filebench/wiki for WML definition and tutorials.\n\n" \
 "Options:\n" \
 "   -f <wmlscript> generate workload from the specified file\n" \
 "   -h             display this help message\n" \
