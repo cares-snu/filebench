@@ -1,0 +1,32 @@
+filebench (1.4.9.1-3) UNRELEASED; urgency=medium
+
+  * d/copyright: Use https protocol in Format field
+  * d/control: Deprecating priority extra as per policy 4.0.1
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/watch: Use https protocol
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 10:13:29 +0200
+
+filebench (1.4.9.1-2) unstable; urgency=low
+
+  * debian/control: Use canonical VCS URLs, fixes lintian tag
+    vcs-field-not-canonical.
+  * debian/compat: Use debhelper version 9 to enable hardening flags
+    automatically. Fixes lintian tags hardening-no-relro and
+    hardening-no-fortify-functions.
+  * Updated Standards-Version to 3.9.4.
+
+ -- Martin Steigerwald <ms@teamix.de>  Tue, 08 Oct 2013 11:47:36 +0200
+
+filebench (1.4.9.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #655222).
+  [ Martin Steigerwald ]
+  * Initial packaging.
+  * debian/control: Bumped standards version to 3.9.3.
+    No changes needed.
+  [ Alex Mestiashvili ]
+  * debian/copyright: Added copyright information.
+  * debian/filebench.1: Added manpage.
+
+ -- Martin Steigerwald <ms@teamix.de>  Mon, 07 May 2012 10:59:08 +0100

@@ -1,0 +1,20 @@
+Source: filebench
+Section: utils
+Priority: optional
+Maintainer: Martin Steigerwald <ms@teamix.de>
+Uploaders: Alexandre Mestiashvili <alex@biotec.tu-dresden.de>
+Build-Depends: debhelper (>= 9), autotools-dev, help2man, bison
+Standards-Version: 3.9.4
+Homepage: http://sourceforge.net/projects/filebench/
+Vcs-Git: https://salsa.debian.org/debian/filebench.git
+Vcs-Browser: https://salsa.debian.org/debian/filebench
+
+Package: filebench
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: File system and storage benchmark for a variety of workloads
+ Filebench is a filesystem and storage backup that can generate a high
+ variety of workloads. It employs extensive Workload Model Language (WML)
+ for detailed workload specification. It includes popular pre-defined
+ workloads like: webserver, fileserver, varmail. It reports throughput
+ and latency histograms.
