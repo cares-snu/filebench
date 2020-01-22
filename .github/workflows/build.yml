@@ -1,0 +1,20 @@
+name: Build
+on: [push]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install build dependencies
+        run: sudo apt-get install -y libtool bison flex
+      - name: Build filebench
+        run: |
+          libtoolize
+          aclocal
+          autoheader
+          automake --add-missing
+          autoconf
+          ./configure
+          make
