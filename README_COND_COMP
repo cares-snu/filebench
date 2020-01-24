@@ -106,7 +106,7 @@ HAVE_LSEEK64
 
 HAVE_LIBTECLA
 
-	If libtecla library is installed, use it for facilitating 
+	If libtecla library is installed, use it for facilitating
 	auto-completion.
 
 HAVE_LWPS
@@ -135,7 +135,7 @@ HAVE_PROCSCOPE_PTHREADS
 	If you have POSIX process scope threads, use them.
 
 HAVE_PROC_SYS_KERNEL_SHMMAX
-	We increase the maximum size of a shared memory segment through 
+	We increase the maximum size of a shared memory segment through
 	/proc/sys/kernel/shmmax, if this file exists.
 
 HAVE_PTHREAD_MUTEXATTR_SETPROTOCOL

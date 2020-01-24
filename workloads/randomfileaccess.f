@@ -21,8 +21,8 @@
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-# Exercises the indexed attribute of the fileset_pick() function. 
-# 
+# Exercises the indexed attribute of the fileset_pick() function.
+#
 
 set $dir=/tmp
 set $cached=false

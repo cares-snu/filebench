@@ -148,7 +148,7 @@ threadflow_init(procflow_t *procflow)
 
 	/*
 	 * All threadflows for this process were defined.
-	 * Inform process creator thread about that. 
+	 * Inform process creator thread about that.
 	 * When all thread monitors set this flag (in their
 	 * corresponding procflow structures), the process creator
 	 * thread will set shm_procflows_defined_flag, which

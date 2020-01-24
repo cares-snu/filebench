@@ -203,7 +203,7 @@ flowoplib_destruct_noop(flowop_t *flowop)
 
 /*
  * Generates a file attribute from flags in the supplied flowop.
- * Sets FLOW_ATTR_DIRECTIO and/or FLOW_ATTR_DSYNC and advise for 
+ * Sets FLOW_ATTR_DIRECTIO and/or FLOW_ATTR_DSYNC and advise for
  * no random read (POSIX_FADV_RANDOM) as needed.
  */
 static int
@@ -216,7 +216,7 @@ flowoplib_fileattrs(flowop_t *flowop)
 
 	if (avd_get_bool(flowop->fo_dsync))
 		attrs |= FLOW_ATTR_DSYNC;
-	
+
 	if (avd_get_bool(flowop->fo_noreadahead))
 		attrs |= FLOW_ATTR_FADV_RANDOM;
 
@@ -1547,10 +1547,10 @@ flowoplib_openfile_common(threadflow_t *threadflow, flowop_t *flowop, int fd)
 		/* Disable read ahead with the help of fadvise, if asked for */
 		if (flowoplib_fileattrs(flowop) & FLOW_ATTR_FADV_RANDOM) {
 #ifdef HAVE_FADVISE
-			if (posix_fadvise(threadflow->tf_fd[fd].fd_num, 0, 0, POSIX_FADV_RANDOM) 
+			if (posix_fadvise(threadflow->tf_fd[fd].fd_num, 0, 0, POSIX_FADV_RANDOM)
 				!= FILEBENCH_OK) {
 				filebench_log(LOG_ERROR,
-					"Failed to disable read ahead for raw device %s, with status %s", 
+					"Failed to disable read ahead for raw device %s, with status %s",
 				    	name, strerror(errno));
 				return (FILEBENCH_ERROR);
 			}

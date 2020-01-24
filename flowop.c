@@ -373,13 +373,13 @@ flowop_start(threadflow_t *threadflow)
 	    _lwp_self());
 #endif
 
-	/* 
+	/*
 	 * Now we set tf_running flag to indicate to the main process
 	 * that the worker thread is running. However, the thread is
 	 * still not executing the workload, as it is blocked by the
 	 * shm_run_lock. Main thread will release this lock when all
 	 * threads set their tf_running flag to 1.
-	 */ 
+	 */
 	threadflow->tf_abort = 0;
 	threadflow->tf_running = 1;
 

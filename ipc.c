@@ -433,7 +433,7 @@ static int
 preallocated_entries(int obj_type)
 {
 	int entries;
-	
+
 	switch(obj_type) {
 	case FILEBENCH_FILESET:
 		entries = sizeof(filebench_shm->shm_fileset)

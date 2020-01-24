@@ -108,7 +108,7 @@ firstdone               { return FSA_FIRSTDONE; }
 gamma                   { return FSA_RANDGAMMA; }
 highwater               { return FSA_HIGHWATER; }
 indexed                 { return FSA_INDEXED; }
-instances               { return FSA_INSTANCES;}                  
+instances               { return FSA_INSTANCES;}
 iosize                  { return FSA_IOSIZE; }
 iters                   { return FSA_ITERS;}
 leafdirs                { return FSA_LEAFDIRS;}
@@ -153,7 +153,7 @@ rand48			{ return FSV_RAND48; }
 noreadahead             { return FSA_NOREADAHEAD; }
 
 
-<INITIAL>\"			{ 
+<INITIAL>\"			{
                                 BEGIN WHITESTRINGSTATE;
                                 return FSK_QUOTE;
                         }
@@ -206,7 +206,7 @@ noreadahead             { return FSA_NOREADAHEAD; }
                                 errno = 0;
 				yylval.ival = strtoll(yytext, NULL, 10);
 				if (errno == EINVAL || errno == ERANGE) {
-                                        (void) filebench_log(LOG_ERROR, 
+                                        (void) filebench_log(LOG_ERROR,
 						"Invalid I value '%s':%s", yytext,
 						strerror(errno));
 				}
@@ -217,7 +217,7 @@ noreadahead             { return FSA_NOREADAHEAD; }
                                 errno = 0;
 				yylval.ival = strtoll(yytext, NULL, 10);
 				if (errno == EINVAL || errno == ERANGE) {
-                                        (void) filebench_log(LOG_ERROR, 
+                                        (void) filebench_log(LOG_ERROR,
 						"Invalid I value '%s':%s", yytext,
 						strerror(errno));
 				}
@@ -228,7 +228,7 @@ noreadahead             { return FSA_NOREADAHEAD; }
                                 errno = 0;
 				yylval.ival = KB * strtoll(yytext, NULL, 10);
 				if (errno == EINVAL || errno == ERANGE) {
-                                        (void) filebench_log(LOG_ERROR, 
+                                        (void) filebench_log(LOG_ERROR,
 						"Invalid I value '%s':%s", yytext,
 						strerror(errno));
 				}
@@ -239,7 +239,7 @@ noreadahead             { return FSA_NOREADAHEAD; }
                                 errno = 0;
 				yylval.ival = MB * strtoll(yytext, NULL, 10);
 				if (errno == EINVAL || errno == ERANGE) {
-                                        (void) filebench_log(LOG_ERROR, 
+                                        (void) filebench_log(LOG_ERROR,
 						"Invalid I value '%s':%s", yytext,
 						strerror(errno));
 				}
@@ -250,7 +250,7 @@ noreadahead             { return FSA_NOREADAHEAD; }
                                 errno = 0;
 				yylval.ival = GB * strtoll(yytext, NULL, 10);
 				if (errno == EINVAL || errno == ERANGE) {
-                                        (void) filebench_log(LOG_ERROR, 
+                                        (void) filebench_log(LOG_ERROR,
 						"Invalid I value '%s':%s", yytext,
 						strerror(errno));
 				}

@@ -53,7 +53,7 @@ QUICK-START GUIDE
 To quickly introduce a new user to Filebench we use two examples demonstrating
 two different typical Filebench workflows: 1) describe a user-defined workload
 in Workload Model Language (WML) and generate the workload; 2) generate one of
-the predefined Filebench workloads. 
+the predefined Filebench workloads.
 The description in this guide assumes Filebench 1.5-alpha1 or higher.
 
 

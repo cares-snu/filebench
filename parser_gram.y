@@ -128,7 +128,7 @@ static void parser_enable_lathist(cmd_t *cmd);
 %token FSC_SYSTEM FSC_EVENTGEN FSC_ECHO FSC_RUN FSC_PSRUN FSC_VERSION FSC_ENABLE
 %token FSC_DOMULTISYNC
 
-%token FSV_STRING FSV_VAL_POSINT FSV_VAL_NEGINT FSV_VAL_BOOLEAN FSV_VARIABLE 
+%token FSV_STRING FSV_VAL_POSINT FSV_VAL_NEGINT FSV_VAL_BOOLEAN FSV_VARIABLE
 %token FSV_WHITESTRING FSV_RANDUNI FSV_RANDTAB FSV_URAND FSV_RAND48
 
 %token FSE_FILE FSE_FILES FSE_FILESET FSE_PROC FSE_THREAD FSE_FLOWOP FSE_CVAR
@@ -757,7 +757,7 @@ fileset_attr_op: attrs_define_fileset FSK_ASSIGN attr_value
 	$$ = $3;
 	$$->attr_name = $1;
 }
-| attrs_define_fileset 
+| attrs_define_fileset
 {
 	$$ = alloc_attr();
 	if (!$$)
@@ -956,7 +956,7 @@ fo_attr_op: attrs_flowop FSK_ASSIGN attr_value
 	$$ = $3;
 	$$->attr_name = $1;
 }
-| attrs_flowop 
+| attrs_flowop
 {
 	if (($$ = alloc_attr()) == NULL)
 		YYERROR;
@@ -988,7 +988,7 @@ ev_attr_op: attrs_eventgen FSK_ASSIGN attr_value
 	$$ = $3;
 	$$->attr_name = $1;
 }
-| attrs_eventgen 
+| attrs_eventgen
 {
 	if (($$ = alloc_attr()) == NULL)
 		YYERROR;
@@ -1931,7 +1931,7 @@ parser_thread_define(cmd_t *cmd, procflow_t *procflow)
 		template.tf_memsize = attr->attr_avd;
 	else /* XXX: really, memsize zero is default?.. */
 		template.tf_memsize = avd_int_alloc(0);
-	
+
 	attr = get_attr(cmd, FSA_IOPRIO);
 	if (attr)
 		template.tf_ioprio = attr->attr_avd;
@@ -2472,7 +2472,7 @@ parser_fileset_create(cmd_t *cmd)
 {
 	int ret;
 
-	ret = fileset_createsets(); 
+	ret = fileset_createsets();
 	if (ret) {
 		filebench_log(LOG_ERROR, "Failed to create filesets");
 		filebench_shutdown(1);

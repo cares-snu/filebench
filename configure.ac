@@ -40,8 +40,8 @@ fi
 AC_CHECK_HEADERS([sys/param.h])
 AC_CHECK_HEADERS([sys/socket.h])
 AC_CHECK_HEADERS([sys/statvfs.h])
-AC_CHECK_HEADERS([sys/time.h]) 
-AC_CHECK_HEADERS([sys/personality.h]) 
+AC_CHECK_HEADERS([sys/time.h])
+AC_CHECK_HEADERS([sys/personality.h])
 
 ####
 #### Check for more sophisticated headers
@@ -118,7 +118,7 @@ AC_FUNC_CLOSEDIR_VOID
 AC_FUNC_FORK
 AC_FUNC_MALLOC
 AC_FUNC_MMAP
-AC_FUNC_REALLOC 
+AC_FUNC_REALLOC
 AC_FUNC_STAT
 AC_FUNC_STRFTIME
 AC_FUNC_STRTOD
@@ -179,7 +179,7 @@ AC_CHECK_LIB([dl],[dlopen])
 #### Check for files
 ####
 
-# Increase the  maximum size of a shared memory segment through 
+# Increase the  maximum size of a shared memory segment through
 # /proc/sys/kernel/shmmax, if this file exists.
 AC_CHECK_FILE(
 	[/proc/sys/kernel/shmmax],
@@ -262,7 +262,7 @@ AC_TRY_COMPILE([
 	],
 	[
 		struct stat64 test;
-		(void)stat64("test", &test); 
+		(void)stat64("test", &test);
 	],[
 	    AC_DEFINE(HAVE_STAT64, 1, [ Define if you have stat64. ])
 	    AC_MSG_RESULT(yes)
@@ -290,14 +290,14 @@ AC_CHECK_FUNCS([waitid]
 	  ]
 )
 
-# check for function aio_error64. Same reason as off64_t. FreeBSD does not support it 
+# check for function aio_error64. Same reason as off64_t. FreeBSD does not support it
 AC_CHECK_FUNCS([aio_error64]
 	,[
 	    AC_DEFINE(HAVE_AIO_ERROR64, 1, [ Define if you have aio_error64 is defined. ])
 	  ]
 )
 
-# check for function aio_write64. Same reason as off64_t. FreeBSD does not support it 
+# check for function aio_write64. Same reason as off64_t. FreeBSD does not support it
 # Whenether aio_write64 is available, we assume that aiocb64 is also available.
 AC_CHECK_FUNCS([aio_write64]
 	,[
@@ -305,49 +305,49 @@ AC_CHECK_FUNCS([aio_write64]
 	  ]
 )
 
-# check for function aio_return64. Same reason as off64_t. FreeBSD does not support it 
+# check for function aio_return64. Same reason as off64_t. FreeBSD does not support it
 AC_CHECK_FUNCS([aio_return64]
 	,[
 	    AC_DEFINE(HAVE_AIO_RETURN64, 1, [ Define if you have aio_return64 is defined. ])
 	  ]
 )
 
-# check for function open64. Same reason as off64_t. FreeBSD does not support it 
+# check for function open64. Same reason as off64_t. FreeBSD does not support it
 AC_CHECK_FUNCS([open64]
 	,[
 	    AC_DEFINE(HAVE_OPEN64, 1, [ Define if you have open64 is defined. ])
 	  ]
 )
 
-# check for function  mmap64. Same reason as off64_t. FreeBSD does not support it 
+# check for function  mmap64. Same reason as off64_t. FreeBSD does not support it
 AC_CHECK_FUNCS([mmap64]
 	,[
 	    AC_DEFINE(HAVE_MMAP64, 1, [ Define if you have mmap64 is defined. ])
 	  ]
 )
 
-# check for function fstat64. Same reason as off64_t. FreeBSD does not support it 
+# check for function fstat64. Same reason as off64_t. FreeBSD does not support it
 AC_CHECK_FUNCS([fstat64]
 	,[
 	    AC_DEFINE(HAVE_FSTAT64, 1, [ Define if you have fstat64 is defined. ])
 	  ]
 )
 
-# check for function lseek64. Same reason as off64_t. FreeBSD does not support it 
+# check for function lseek64. Same reason as off64_t. FreeBSD does not support it
 AC_CHECK_FUNCS([lseek64]
 	,[
 	    AC_DEFINE(HAVE_LSEEK64, 1, [ Define if you have lseek64 is defined. ])
 	  ]
 )
 
-# check for function pwrite64. Same reason as off64_t. FreeBSD does not support it 
+# check for function pwrite64. Same reason as off64_t. FreeBSD does not support it
 AC_CHECK_FUNCS([pwrite64]
 	,[
 	    AC_DEFINE(HAVE_PWRITE64, 1, [ Define if you have pwrite64 is defined. ])
 	  ]
 )
 
-# check for function pread64. Same reason as off64_t. FreeBSD does not support it 
+# check for function pread64. Same reason as off64_t. FreeBSD does not support it
 AC_CHECK_FUNCS([pread64]
 	,[
 	    AC_DEFINE(HAVE_PREAD64, 1, [ Define if you have pread64 is defined. ])
@@ -452,7 +452,7 @@ AC_CHECK_MEMBERS([struct stat.st_rdev])
 ####
 #### Check for C compiler features
 ####
-AC_C_CONST 
+AC_C_CONST
 
 ####
 #### Final steps

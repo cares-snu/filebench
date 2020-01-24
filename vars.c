@@ -50,7 +50,7 @@
  * either a boolean, an integer, a double, a string or pointer to an associated
  * random distribution object. Both avd_t and var_t entities are allocated from
  * interprocess shared memory space.
- * 
+ *
  * The attribute descriptors implement delayed binding to variable values,
  * which is necessary because the values of variables may be changed between
  * the time the workload model is loaded and the time it actually runs by
@@ -61,7 +61,7 @@
  *
  * For random variables, they actually point to the random distribution object,
  * allowing Filebench to invoke the appropriate random distribution function on
- * each access to the attribute. 
+ * each access to the attribute.
  *
  * The routines in this module are used to allocate, locate, and manipulate the
  * attribute descriptors and vars. Routines are also included to convert

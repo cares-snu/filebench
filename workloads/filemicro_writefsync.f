@@ -25,7 +25,7 @@
 # ident	"%Z%%M%	%I%	%E% SMI"
 
 # Single-threaded writes to initially empty file.
-# I/O size is set to 8KB. After every 1024 writes 
+# I/O size is set to 8KB. After every 1024 writes
 # (i.e., 8MB written) fsync is called.
 # The run finishes after 1GB is fully written.
 

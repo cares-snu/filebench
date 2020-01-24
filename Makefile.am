@@ -23,7 +23,7 @@ EXTRA_DIST = LICENSE
 
 ACLOCAL_AMFLAGS = -I m4
 AM_YFLAGS = -d
-#AM_LDFLAGS = 
+#AM_LDFLAGS =
 if GCC_USED
 AM_CFLAGS = -Wall -Wno-unknown-pragmas
 endif

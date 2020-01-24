@@ -466,7 +466,7 @@ procflow_init(void)
 
 	(void) signal(SIGUSR1, procflow_cancel);
 
-	/* 
+	/*
 	 * Wait for the process creator thread to define
 	 * all procflows (and threadflows in turn).
 	 */
