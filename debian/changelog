@@ -1,4 +1,4 @@
-filebench (1.5-prerelease-1) UNRELEASED; urgency=medium
+filebench (1.5-alpha3) UNRELEASED; urgency=medium
 
   [ Ondřej Nový ]
   * d/copyright: Use https protocol in Format field
@@ -7,9 +7,9 @@ filebench (1.5-prerelease-1) UNRELEASED; urgency=medium
   * d/watch: Use https protocol
 
   [ Hyeon Kim ]
-  * Update to filebench 1.5-prerelease
+  * Update to filebench 1.5-alpha3
 
- -- Hyeon Kim <simnalamburt@gmail.com>  Thu, 23 Jan 2020 04:14:31 +0900
+ -- Hyeon Kim <simnalamburt@gmail.com>  Sat, 25 Jan 2020 05:24:56 +0900
 
 filebench (1.4.9.1-2) unstable; urgency=low
 
