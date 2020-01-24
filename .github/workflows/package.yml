@@ -1,5 +1,8 @@
 name: Package
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -7,9 +10,52 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+      - run: git fetch --prune --unshallow # `git describe` requires full history
       - name: Install build dependencies
         run: sudo apt-get install -y libtool bison flex devscripts debhelper
-      - name: Package filebench
+      - name: Build and package filebench
         run: |
-          tar --exclude-vcs -zcvf '../filebench_1.5-prerelease.orig.tar.gz' --transform='s/^\./filebench/' .
+          VERSION=$(git describe --always)
+
+          # Update version
+          dch -v "${VERSION}-1" -m ''
+
+          # Create tarball
+          tar --exclude-vcs -Jcf "../filebench_${VERSION}.orig.tar.xz" --transform='s/^\./filebench/' .
+
+          # Build a package
           debuild -us -uc
+      - name: Upload filebench to Bintray
+        env:
+          BINTRAY_API_KEY: ${{ secrets.BINTRAY_API_KEY }}
+        run: |
+          VERSION=$(git describe --always)
+
+          # Upload the package
+          curl \
+            -X PUT \
+            -u "simnalamburt:${BINTRAY_API_KEY}" \
+            -T "../filebench_${VERSION}-1_amd64.deb" \
+            -H 'X-Bintray-Debian-Distribution: jessie,stretch,buster,trusty,xenial,bionic' \
+            -H 'X-Bintray-Debian-Component: main' \
+            -H 'X-Bintray-Debian-Architecture: amd64' \
+            "https://api.bintray.com/content/simnalamburt/filebench-nightly/filebench/${VERSION}-1/filebench_${VERSION}-1_amd64.deb"
+
+          # Publish the package
+          curl \
+            -X POST \
+            -u "simnalamburt:${BINTRAY_API_KEY}" \
+            "https://api.bintray.com/content/simnalamburt/filebench-nightly/filebench/${VERSION}-1/publish"
+
+# How to install filebench with apt-get
+# ========
+# 1.  Add a repository
+#
+#     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
+#     echo 'deb https://dl.bintray.com/simnalamburt/filebench-nightly buster main' |
+#       sudo tee -a /etc/apt/sources.list.d/filebench.list
+#     sudo apt-get update
+#
+# 2.  Install
+#
+#     sudo apt-get install filebench
