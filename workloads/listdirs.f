@@ -25,7 +25,7 @@
 # Creates a fileset with a fairly deep directory tree, then does readdir
 # operations on them for a specified amount of time
 #
-set $dir=/tmp
+set $dir=/vSSD
 set $nfiles=50000
 set $meandirwidth=5
 set $nthreads=16

@@ -26,7 +26,7 @@
 # $nfiles - number of data files
 # $nthreads - number of worker threads
 
-set $dir=/tmp
+set $dir=/vSSD
 set $eventrate=10
 set $meandirwidth=20
 set $nthreads=1

@@ -41,7 +41,7 @@
 # $nfiles - number of files in the fileset
 # $nthreads - number of worker threads
 
-set $dir=/tmp
+set $dir=/vSSD
 set $eventrate=10
 set $dirwidth=20
 set $filesize=16k

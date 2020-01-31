@@ -28,7 +28,7 @@
 # A fsync is issued after 16K ($iters) worth of writes.
 # Stops after one ($count) fsync.
 
-set $dir=/tmp
+set $dir=/vSSD
 set $cached=false
 set $count=1
 set $filesize=1g

@@ -23,13 +23,13 @@
 # Use is subject to license terms.
 #
 
-set $dir=/tmp
-set $nfiles=1000
+set $dir=/vSSD
+set $nfiles=800
 set $meandirwidth=20
 set $filesize=cvar(type=cvar-gamma,parameters=mean:16384;gamma:1.5)
-set $nthreads=100
+set $nthreads=10
 set $iosize=1m
-set $meanappendsize=16k
+set $meanappendsize=4k
 
 define fileset name=bigfileset,path=$dir,size=$filesize,entries=$nfiles,dirwidth=$meandirwidth,prealloc=100,readonly
 define fileset name=logfiles,path=$dir,size=$filesize,entries=1,dirwidth=$meandirwidth,prealloc
@@ -74,4 +74,4 @@ define process name=filereader,instances=1
 
 echo  "Web-server Version 3.1 personality successfully loaded"
 
-run 60
+run 250

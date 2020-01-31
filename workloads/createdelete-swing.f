@@ -26,7 +26,7 @@
 # time is up or a user interrupts the run.
 #
 
-set $path=/tmp
+set $path=/vSSD
 set $nfiles=1000
 
 set $filesize=500k

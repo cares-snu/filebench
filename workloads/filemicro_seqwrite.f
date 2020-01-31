@@ -28,7 +28,7 @@
 # a 1GB file.
 # Stops after 1 series of 1024 ($count) writes has been done.
 
-set $dir=/tmp
+set $dir=/vSSD
 set $cached=false
 set $count=1024
 set $iosize=1m

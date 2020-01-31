@@ -25,7 +25,7 @@
 # Creates a fileset with $nfiles empty files, then proceeds to open each one
 # and then close it.
 #
-set $dir=/tmp
+set $dir=/vSSD
 set $nfiles=50000
 set $meandirwidth=100
 set $nthreads=16

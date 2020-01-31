@@ -1,4 +1,4 @@
-set $dir=/tmp
+set $dir=/vSSD
 set $filesize=100m
 set $iosize=cvar(type=cvar-uniform,parameters=lower:4096;upper:8192)
 

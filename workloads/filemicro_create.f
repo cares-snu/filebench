@@ -27,7 +27,7 @@
 # Simple way to create a file.  Start off with a zero length file, and issue
 # 1024 ($count) 1MB appends.
 
-set $dir=/tmp
+set $dir=/vSSD
 set $count=1024
 set $iosize=1m
 set $nthreads=1
